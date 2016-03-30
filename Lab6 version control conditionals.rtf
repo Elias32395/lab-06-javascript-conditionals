@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;\red180\green36\blue25;\red47\green180\blue29;
+\red159\green160\blue28;\red46\green174\blue187;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs20 \cf2 \cb0 \CocoaLigature0 Last login: Wed Mar 30 10:00:05 on console\
+ent-v314-014:~ student$ cd ~/desktop\
+ent-v314-014:desktop student$ mkdir elias\
+ent-v314-014:desktop student$ cd elias\
+ent-v314-014:elias student$ mkdir lab-06-javascript-conditionals\
+ent-v314-014:elias student$ cd lab-06-javascript-conditionals\
+ent-v314-014:lab-06-javascript-conditionals student$ pwd\
+/Users/student/desktop/elias/lab-06-javascript-conditionals\
+ent-v314-014:lab-06-javascript-conditionals student$ ls -al\
+total 0\
+drwxr-xr-x  2 student  staff   68 Mar 30 10:27 .\
+drwxr-xr-x  3 student  staff  102 Mar 30 10:27 ..\
+ent-v314-014:lab-06-javascript-conditionals student$ git init\
+Initialized empty Git repository in /Users/student/Desktop/elias/lab-06-javascript-conditionals/.git/\
+ent-v314-014:lab-06-javascript-conditionals student$ ls -al\
+total 0\
+drwxr-xr-x   3 student  staff  102 Mar 30 10:28 .\
+drwxr-xr-x   3 student  staff  102 Mar 30 10:27 ..\
+drwxr-xr-x  10 student  staff  340 Mar 30 10:28 .git\
+ent-v314-014:lab-06-javascript-conditionals student$ ls .git\
+HEAD		config		hooks		objects\
+branches	description	info		refs\
+ent-v314-014:lab-06-javascript-conditionals student$ git config user.name "Elias Santiago "\
+ent-v314-014:lab-06-javascript-conditionals student$ git config user.email "elias.san323@gmail.com"\
+ent-v314-014:lab-06-javascript-conditionals student$ git config -1\
+error: unknown switch `1'\
+usage: git config [options]\
+\
+Config file location\
+    --global              use global config file\
+    --system              use system config file\
+    --local               use repository config file\
+    -f, --file <file>     use given config file\
+    --blob <blob-id>      read config from given blob object\
+\
+Action\
+    --get                 get value: name [value-regex]\
+    --get-all             get all values: key [value-regex]\
+    --get-regexp          get values for regexp: name-regex [value-regex]\
+    --get-urlmatch        get value specific for the URL: section[.var] URL\
+    --replace-all         replace all matching variables: name value [value_regex]\
+    --add                 add a new variable: name value\
+    --unset               remove a variable: name [value-regex]\
+    --unset-all           remove all matches: name [value-regex]\
+    --rename-section      rename section: old-name new-name\
+    --remove-section      remove a section: name\
+    -l, --list            list all\
+    -e, --edit            open an editor\
+    --get-color <slot>    find the color configured: [default]\
+    --get-colorbool <slot>\
+                          find the color setting: [stdout-is-tty]\
+\
+Type\
+    --bool                value is "true" or "false"\
+    --int                 value is decimal number\
+    --bool-or-int         value is --bool or --int\
+    --path                value is a path (file or directory name)\
+\
+Other\
+    -z, --null            terminate values with NUL byte\
+    --includes            respect include directives on lookup\
+\
+ent-v314-014:lab-06-javascript-conditionals student$ curl -u 'elias32395' https://api.github.com/user/repos -d '\{"name":"lab-06-javascript-conditionals"\}'\
+Enter host password for user 'elias32395':\
+\{\
+  "id": 55070417,\
+  "name": "lab-06-javascript-conditionals",\
+  "full_name": "Elias32395/lab-06-javascript-conditionals",\
+  "owner": \{\
+    "login": "Elias32395",\
+    "id": 17297687,\
+    "avatar_url": "https://avatars.githubusercontent.com/u/17297687?v=3",\
+    "gravatar_id": "",\
+    "url": "https://api.github.com/users/Elias32395",\
+    "html_url": "https://github.com/Elias32395",\
+    "followers_url": "https://api.github.com/users/Elias32395/followers",\
+    "following_url": "https://api.github.com/users/Elias32395/following\{/other_user\}",\
+    "gists_url": "https://api.github.com/users/Elias32395/gists\{/gist_id\}",\
+    "starred_url": "https://api.github.com/users/Elias32395/starred\{/owner\}\{/repo\}",\
+    "subscriptions_url": "https://api.github.com/users/Elias32395/subscriptions",\
+    "organizations_url": "https://api.github.com/users/Elias32395/orgs",\
+    "repos_url": "https://api.github.com/users/Elias32395/repos",\
+    "events_url": "https://api.github.com/users/Elias32395/events\{/privacy\}",\
+    "received_events_url": "https://api.github.com/users/Elias32395/received_events",\
+    "type": "User",\
+    "site_admin": false\
+  \},\
+  "private": false,\
+  "html_url": "https://github.com/Elias32395/lab-06-javascript-conditionals",\
+  "description": null,\
+  "fork": false,\
+  "url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals",\
+  "forks_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/forks",\
+  "keys_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/keys\{/key_id\}",\
+  "collaborators_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/collaborators\{/collaborator\}",\
+  "teams_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/teams",\
+  "hooks_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/hooks",\
+  "issue_events_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/issues/events\{/number\}",\
+  "events_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/events",\
+  "assignees_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/assignees\{/user\}",\
+  "branches_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/branches\{/branch\}",\
+  "tags_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/tags",\
+  "blobs_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/git/blobs\{/sha\}",\
+  "git_tags_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/git/tags\{/sha\}",\
+  "git_refs_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/git/refs\{/sha\}",\
+  "trees_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/git/trees\{/sha\}",\
+  "statuses_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/statuses/\{sha\}",\
+  "languages_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/languages",\
+  "stargazers_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/stargazers",\
+  "contributors_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/contributors",\
+  "subscribers_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/subscribers",\
+  "subscription_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/subscription",\
+  "commits_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/commits\{/sha\}",\
+  "git_commits_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/git/commits\{/sha\}",\
+  "comments_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/comments\{/number\}",\
+  "issue_comment_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/issues/comments\{/number\}",\
+  "contents_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/contents/\{+path\}",\
+  "compare_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/compare/\{base\}...\{head\}",\
+  "merges_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/merges",\
+  "archive_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/\{archive_format\}\{/ref\}",\
+  "downloads_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/downloads",\
+  "issues_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/issues\{/number\}",\
+  "pulls_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/pulls\{/number\}",\
+  "milestones_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/milestones\{/number\}",\
+  "notifications_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/notifications\{?since,all,participating\}",\
+  "labels_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/labels\{/name\}",\
+  "releases_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/releases\{/id\}",\
+  "deployments_url": "https://api.github.com/repos/Elias32395/lab-06-javascript-conditionals/deployments",\
+  "created_at": "2016-03-30T14:35:11Z",\
+  "updated_at": "2016-03-30T14:35:11Z",\
+  "pushed_at": "2016-03-30T14:35:11Z",\
+  "git_url": "git://github.com/Elias32395/lab-06-javascript-conditionals.git",\
+  "ssh_url": "git@github.com:Elias32395/lab-06-javascript-conditionals.git",\
+  "clone_url": "https://github.com/Elias32395/lab-06-javascript-conditionals.git",\
+  "svn_url": "https://github.com/Elias32395/lab-06-javascript-conditionals",\
+  "homepage": null,\
+  "size": 0,\
+  "stargazers_count": 0,\
+  "watchers_count": 0,\
+  "language": null,\
+  "has_issues": true,\
+  "has_downloads": true,\
+  "has_wiki": true,\
+  "has_pages": false,\
+  "forks_count": 0,\
+  "mirror_url": null,\
+  "open_issues_count": 0,\
+  "forks": 0,\
+  "open_issues": 0,\
+  "watchers": 0,\
+  "default_branch": "master",\
+  "permissions": \{\
+    "admin": true,\
+    "push": true,\
+    "pull": true\
+  \},\
+  "network_count": 0,\
+  "subscribers_count": 1\
+\}\
+ent-v314-014:lab-06-javascript-conditionals student$ pwd\
+/Users/student/desktop/elias/lab-06-javascript-conditionals\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote -v\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote -v\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote add origin https://your_github_user_name/lab-06-javascript-conditionals.git\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote add origin https://elias32395/lab-06-javascript-conditionals.git\
+fatal: remote origin already exists.\
+ent-v314-014:lab-06-javascript-conditionals student$ got remote set-url origin https://github.com/elias32395/lab-06-javascript-conditionals\
+-bash: got: command not found\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote set-url origin https://github.com/elias32395/lab-06-javascript-conditionals\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote add origin https://elias32395/lab-06-javascript-conditionals.git\
+fatal: remote origin already exists.\
+ent-v314-014:lab-06-javascript-conditionals student$ remote -v\
+-bash: remote: command not found\
+ent-v314-014:lab-06-javascript-conditionals student$ git remote -v\
+origin	https://github.com/elias32395/lab-06-javascript-conditionals (fetch)\
+origin	https://github.com/elias32395/lab-06-javascript-conditionals (push)\
+ent-v314-014:lab-06-javascript-conditionals student$ pwd\
+/Users/student/desktop/elias/lab-06-javascript-conditionals\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+\
+Initial commit\
+\
+nothing to commit (create/copy files and use "git add" to track)\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf3 README.markdown\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+ent-v314-014:lab-06-javascript-conditionals student$ git add --all\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+\
+Initial commit\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf4 new file:   README.markdown\cf2 \
+\
+ent-v314-014:lab-06-javascript-conditionals student$ git commit -m "added a README file"\
+[master (root-commit) 2cd6bd0] added a README file\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 README.markdown\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+nothing to commit, working directory clean\
+ent-v314-014:lab-06-javascript-conditionals student$ git log --color\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf5 commit 2cd6bd0c1a63e13845f41a6e34e19f36275b6967\cf2 \
+Author: Elias Santiago <elias.san323@gmail.com>\
+Date:   Wed Mar 30 10:45:34 2016 -0400\
+\
+    added a README file\
+ent-v314-014:lab-06-javascript-conditionals student$ git push origin master\
+Counting objects: 3, done.\
+Writing objects: 100% (3/3), 231 bytes | 0 bytes/s, done.\
+Total 3 (delta 0), reused 0 (delta 0)\
+To https://github.com/elias32395/lab-06-javascript-conditionals\
+ * [new branch]      master -> master\
+ent-v314-014:lab-06-javascript-conditionals student$ git diff --color\
+\cf1 diff --git a/README.markdown b/README.markdown\cf2 \
+\cf1 index e69de29..e2ac1f7 100644\cf2 \
+\cf1 --- a/README.markdown\cf2 \
+\cf1 +++ b/README.markdown\cf2 \
+\cf6 @@ -0,0 +1,2 @@\cf2 \
+\cf4 +This is lab 06\cf2 \
+\cf4 +its about java script conditionals\cf2 \
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf3 modified:   README.markdown\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+ent-v314-014:lab-06-javascript-conditionals student$ git add --all\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   README.markdown\cf2 \
+\
+ent-v314-014:lab-06-javascript-conditionals student$ git commit -m "added text to read me"\
+[master 740a6d9] added text to read me\
+ 1 file changed, 2 insertions(+)\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+nothing to commit, working directory clean\
+ent-v314-014:lab-06-javascript-conditionals student$ git push origin master\
+Counting objects: 5, done.\
+Delta compression using up to 16 threads.\
+Compressing objects: 100% (2/2), done.\
+Writing objects: 100% (3/3), 308 bytes | 0 bytes/s, done.\
+Total 3 (delta 0), reused 0 (delta 0)\
+To https://github.com/elias32395/lab-06-javascript-conditionals\
+   2cd6bd0..740a6d9  master -> master\
+ent-v314-014:lab-06-javascript-conditionals student$ git status\
+On branch master\
+nothing to commit, working directory clean\
+ent-v314-014:lab-06-javascript-conditionals student$ \
+}
